@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+
+        <title>
+            lahari
+        </title>
+        <link rel="stylesheet" href="quiz-styles.css">
+        <script type="text/javascript" defer src="quiz.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    </head>
+    <body>
+        <canvas id="confetti"></canvas>
+        <div id="login-page" class="login-page">
+            <h2>Click on Start Quiz To Proceed</h2>
+            <button id="start-quiz" onclick="startQuizandLoadPage()" class="btn-1">Start Quiz</button>
+        </div>
+        <div id="quiz-container" class="quiz-container">
+            <button id="submit" onclick="submit()" class="btn-1">Submit</button>
+            <h2 class="quiz-question" id="quiz-question" name="quiz-question">
+            </h2>
+            <ul>
+                <li>
+                    <input type="radio" id="optionA" name="options" class="quiz-answer">
+                    <label for="optionA" id="option-a"></label>
+                </li>
+                <li>
+                    <input type="radio" id="optionB" name="options" class="quiz-answer">
+                    <label for="optionB" id="option-b"></label>
+                </li>
+                <li>
+                    <input type="radio" id="optionC" name="options" class="quiz-answer">
+                    <label for="optionC" id="option-c"></label>
+                </li>
+                <li>
+                    <input type="radio" id="optionD" name="options" class="quiz-answer">
+                    <label for="optionD" id="option-d"></label>
+                </li>
+            </ul>
+            <button id="previous" onclick="goToPreviousQuestion()" class="btn-1">Previous</button>
+            <button id="next" onclick="goToNextQuestion()" class="btn-1">Next</button>
+            <button id="save" onclick="save()" class="btn-1">Save</button>
+            
+            <!-- <div>
+                You Scored <span id="result"></span> out of 3
+            </div> -->
+        </div>
+        
+        
+    </body>
+</html>
